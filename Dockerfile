@@ -1,7 +1,7 @@
 
 ARG METABASE_VERSION=v0.46.5
 
-FROM clojure:openjdk-11-tools-deps-slim-buster AS stg_base
+FROM clojure:tools-deps-1.11.1.1208 AS stg_base
 
 # Reequirements for building the driver
 RUN apt-get update && \
